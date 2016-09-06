@@ -1,0 +1,33 @@
+How to release a new version of GASP
+========
+
+ 1. Edit setup.py and update the `version = 'x.x.x',` stanza to match the new release version.
+
+ 2. List any new non-source files added since the last release needed for distribution with the upstream tarball in `MANIFEST.in`. See the [distutils documentation][1] for more information about what is and isn't included by default, and what needs to be added manually. 
+
+ 3. Update the changelog with `CHANGELOG=NEWS debchange --distributor UPSTREAM -i`. To save typing, I usually alias this in `~/.bashrc` as `pch`. If you're not just incrementing the release number, specify the full new version with `-v` instead of `-i`. Examples:
+    -  CHANGELOG=NEWS debchange --distributor UPSTREAM -i # Bumps the lowest .x by one
+    -  CHANGELOG=NEWS debchange --distributor UPSTREAM -v 0.1.2 # Sets the version to 0.1.2
+
+ 4. Run `python setup.py sdist bdist_egg` from the root of the source directory. The tarball and egg should appear in `dist/gasp-x.x.x.tar.gz`, `dist/gasp.x.x.x-pyX.Y.egg` respectively. 
+
+ 5. Test locally to make sure the package works as expected. 
+
+ 6. Update the gasp-core website to announce the new version. At least:
+    - create a new [Launchpad release][2]
+    - put up an [annoucment on Launchpad][3]
+    - upload the .tar.gz to the newly created release page
+
+ 7. If you have permission, upload the package to the [Python Package Index][4]. Mark Pilgrim wrote an [excellent tutorial][5] on using it, and it is highly recommended reading to understand what you're doing. In essence, do the following: 
+    python setup.py register sdist bdist_egg upload
+
+ 8. You're done!
+
+[1]: http://docs.python.org/distutils/sourcedist.html#specifying-the-files-to-distribute
+[2]: https://launchpad.net/gasp-core/0.3.x/+addrelease
+[3]: https://launchpad.net/gasp-core/+announce
+[4]: http://pypi.python.org/
+[5]: http://diveintopython3.org/packaging.html#pypi
+
+ -- Luke Faraone <luke@faraone.cc>, Tue, 23 Mar 2010 18:28:20 -0500
+
