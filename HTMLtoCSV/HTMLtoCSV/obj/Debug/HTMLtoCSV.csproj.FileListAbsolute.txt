@@ -1,0 +1,6 @@
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\bin\Debug\HTMLtoCSV.exe.config
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\bin\Debug\HTMLtoCSV.exe
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\bin\Debug\HTMLtoCSV.pdb
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\obj\Debug\HTMLtoCSV.csprojResolveAssemblyReference.cache
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\obj\Debug\HTMLtoCSV.exe
+C:\User\Projects\tnunesrepo\HTMLtoCSV\HTMLtoCSV\obj\Debug\HTMLtoCSV.pdb
