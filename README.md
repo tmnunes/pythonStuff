@@ -10,7 +10,7 @@ Instalar virtualenv: pip install virtualenv
 Instalar GIT: brew install git
 Instalar Django : pip install django
 Instalar Django Framework: pip install djangorestframework
-
+Instalar Swagger: pip install Django-rest-swagger (pip install django-rest-swagger===0.3.5 , versão 1.9 do Django)
 
 
 Criar ficheiro em branco da linha de comandos
