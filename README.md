@@ -1,4 +1,4 @@
-# Pythpn Stuff
+# Python Stuff
 
 ## Instalação / Start in Python:
 
